@@ -1,0 +1,42 @@
+.name-surname {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+html {
+  background-color: #ddbeaa;
+  height: 100vh;
+}
+
+.container {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.image-square img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+}

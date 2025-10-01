@@ -1,0 +1,9 @@
+.name-surname {
+  color: blueviolet;
+  font-weight: bold;
+}
+
+html {
+  background-color: #ddbeaa;
+  height: 100vh;
+}

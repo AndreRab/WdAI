@@ -12,3 +12,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.ex1 a {
+  color: aqua;
+}
+
+.ex2 a {
+  color: aquamarine;
+}
+
+.ex3 a {
+  color: chartreuse;
+}
