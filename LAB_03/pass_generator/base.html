@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Generator haseł</h1>
+
+    <label>
+      Minimalna długość:
+      <input type="number" id="minLength" min="1" value="8" />
+    </label>
+    <br />
+
+    <label>
+      Maksymalna długość:
+      <input type="number" id="maxLength" min="1" value="12" />
+    </label>
+    <br />
+
+    <label>
+      <input type="checkbox" id="includeUppercase" />
+      Zawiera wielkie litery
+    </label>
+    <br />
+
+    <label>
+      <input type="checkbox" id="includeSpecial" />
+      Zawiera znaki specjalne
+    </label>
+    <br /><br />
+
+    <button id="generate">Wygeneruj hasło</button>
+
+    <h2 id="password"></h2>
+  </body>
+</html>

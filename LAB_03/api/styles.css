@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f8fa;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #0078d7;
+  color: white;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 20px;
+}
+
+.controls input,
+.controls select {
+  padding: 8px;
+  font-size: 14px;
+}

@@ -1,0 +1,50 @@
+.generator {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.generator h1 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.generator label {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.generator input[type="number"],
+.generator input[type="checkbox"] {
+  margin-left: 8px;
+}
+
+.generator button {
+  margin-top: 15px;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.generator button:hover {
+  background-color: #005ea3;
+}
+
+.generator #password {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0078d7;
+  word-break: break-all;
+}
