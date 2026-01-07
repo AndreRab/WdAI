@@ -1,0 +1,12 @@
+.tytul-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tytul-input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}

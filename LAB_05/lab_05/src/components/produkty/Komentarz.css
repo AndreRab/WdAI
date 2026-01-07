@@ -1,0 +1,93 @@
+.komentarz {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    font-family: sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.komentarz-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #646cff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.fullname {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.komentarz-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.komentarz-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 8px;
+}
+
+.likes-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px;
+    transition: transform 0.1s;
+    line-height: 1;
+}
+
+.like-btn:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+}
+
+.likes-count {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}

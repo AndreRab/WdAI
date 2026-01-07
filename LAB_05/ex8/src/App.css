@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --text-main: #f8fafc;
+  --text-dim: #94a3b8;
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right, #818cf8, #c084fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.page {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.link-button {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.link-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.link-secondary {
+  color: var(--text-dim);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link-secondary:hover {
+  color: var(--text-main);
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-item {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.article-item:hover {
+  transform: scale(1.01);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.article-item a {
+  display: block;
+  padding: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.glass-card {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 2.5rem;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 2rem;
+}
+
+.content {
+  line-height: 1.8;
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+}
+
+.article-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--glass);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+}
+
+.actions {
+  margin-top: 2rem;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Redesign for Licznik to match 8.1 / 8.2 style */
+.licznik {
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  padding: 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.licznik h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: var(--text-dim);
+}
+
+.licznik div {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.button {
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: var(--primary-hover);
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-main);
+}

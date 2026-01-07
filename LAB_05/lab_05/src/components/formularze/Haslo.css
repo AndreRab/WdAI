@@ -1,0 +1,15 @@
+.haslo {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.haslo input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

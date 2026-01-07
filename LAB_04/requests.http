@@ -1,0 +1,78 @@
+### Service 3: Users ###
+
+### Register a new user
+POST http://localhost:3003/api/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+
+### Login (Get Token)
+# @name login
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+
+### Variable for Token
+@authToken = {{login.response.body.token}}
+
+
+### Service 1: Books ###
+
+### Get all books
+GET http://localhost:3001/api/books
+
+### Add a new book (Requires Auth)
+POST http://localhost:3001/api/books
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "year": 1925
+}
+
+### Get specific book
+GET http://localhost:3001/api/books/1
+
+### Delete book (Requires Auth)
+DELETE http://localhost:3001/api/books/1
+Authorization: Bearer {{authToken}}
+
+
+### Service 2: Orders ###
+
+### Create Order (Requires Auth)
+# Note: Ensure a book exists with ID used here.
+POST http://localhost:3002/api/orders
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "userId": 1,
+  "bookId": 1,
+  "quantity": 2
+}
+
+### Get Orders for generic user
+GET http://localhost:3002/api/orders/1
+
+### Update Order (Requires Auth)
+PATCH http://localhost:3002/api/orders/1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "quantity": 5
+}
+
+### Delete Order (Requires Auth)
+DELETE http://localhost:3002/api/orders/1
+Authorization: Bearer {{authToken}}
